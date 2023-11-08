@@ -1,5 +1,4 @@
-%%Identification
-%%The class identifies itself and the LaTeX version needed
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{uopThesis}[2014/08/16 Example class]
 
@@ -107,7 +106,7 @@
 %%% ---- Declaration ---- 
 
 \newenvironment{declaration}{
-	\singlespacing %%% MAHASEN
+	\singlespacing
 	\cleardoublepage
 	\chapter*{\centering \Large Declaration}
 	\thispagestyle{empty}
