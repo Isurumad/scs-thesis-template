@@ -94,7 +94,7 @@
 %%% ---- Abstract ---- 
 \newenvironment{abstract}{
 	\cleardoublepage
-	\chapter*{\centering \large Abstract}
+	\chapter*{\centering \Large Abstract}
 	\thispagestyle{empty}
 }
 
@@ -102,7 +102,7 @@
 %%% ---- Acknowledgement ---- 
 \newenvironment{acknowledgement}{
 	\cleardoublepage
-	\chapter*{\centering \large Acknowledgement}
+	\chapter*{\centering \Large Acknowledgement}
 	\thispagestyle{empty}
 }
 
@@ -111,7 +111,7 @@
 \newenvironment{declaration}{
 	\singlespacing 
 	\cleardoublepage
-	\chapter*{\centering \large Declaration}
+	\chapter*{\centering \Large Declaration}
 	\thispagestyle{empty}
 }{
 	\vspace{2cm}
@@ -152,10 +152,10 @@
 }
 
 
-%\renewcommand{\contentsname}{ \centering TABLE OF CONTENTS}
-\renewcommand{\contentsname}{\hspace*{\fill}\bfseries\large TABLE OF CONTENTS \hspace*{\fill}}   
-\renewcommand{\listtablename}{\hspace*{\fill}\bfseries\large LIST OF TABLES \hspace*{\fill}}   
-\renewcommand{\listfigurename}{\hspace*{\fill}\bfseries\large LIST OF FIGURES \hspace*{\fill}}   
+
+\renewcommand{\contentsname}{\hspace*{\fill}\bfseries\Large TABLE OF CONTENTS \hspace*{\fill}}   
+\renewcommand{\listtablename}{\hspace*{\fill}\bfseries\Large LIST OF TABLES \hspace*{\fill}}   
+\renewcommand{\listfigurename}{\hspace*{\fill}\bfseries\Large LIST OF FIGURES \hspace*{\fill}}   
 %\renewcommand{\listabrname}{\hspace*{\fill}\bfseries\Large LIST OF ABREVIATIONS \hspace*{\fill}} 
 
 \renewcommand{\bibname}{REFERENCES}
@@ -163,7 +163,7 @@
 %%% --- Change chapter title ---
 
 \titleformat{\chapter}[display]
-{\large \bfseries \centering}{CHAPTER\ \thechapter}{0pt}{\MakeUppercase}{\large}
+{\Large \bfseries \centering}{CHAPTER\ \thechapter}{14pt}{\MakeUppercase}{\Large}
 \titlespacing*{\chapter}{-10pt}{-20pt}{45pt}
 
 
