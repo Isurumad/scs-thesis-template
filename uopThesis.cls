@@ -1,6 +1,5 @@
-
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{uopThesis}[2014/08/16 Example class]
+\ProvidesClass{uopThesis}[2023/11/08 Example class]
 
 
  
@@ -18,6 +17,10 @@
 \RequirePackage{titletoc}
  \RequirePackage{tocloft}
  \RequirePackage[nottoc,notlof,notlot]{tocbibind}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{graphicx}
  
 \geometry{
 	a4paper,
@@ -91,7 +94,7 @@
 %%% ---- Abstract ---- 
 \newenvironment{abstract}{
 	\cleardoublepage
-	\chapter*{\centering \Large Abstract}
+	\chapter*{\centering \large Abstract}
 	\thispagestyle{empty}
 }
 
@@ -99,23 +102,23 @@
 %%% ---- Acknowledgement ---- 
 \newenvironment{acknowledgement}{
 	\cleardoublepage
-	\chapter*{\centering \Large Acknowledgement}
+	\chapter*{\centering \large Acknowledgement}
 	\thispagestyle{empty}
 }
 
 %%% ---- Declaration ---- 
 
 \newenvironment{declaration}{
-	\singlespacing
+	\singlespacing 
 	\cleardoublepage
-	\chapter*{\centering \Large Declaration}
+	\chapter*{\centering \large Declaration}
 	\thispagestyle{empty}
 }{
 	\vspace{2cm}
     \noindent Date:
 	\makebox[2in]{\dotfill}
     \flushright
-    \vspace{-0.75cm}
+    \vspace{-0.78cm}
     \makebox[2in]{\dotfill}\\
     \@author
 
@@ -130,19 +133,19 @@
     \noindent Date:
     \makebox[2in]{\dotfill}
     \flushright
-    \vspace{-0.75cm}
+    \vspace{-0.78cm}
     Signature:
     \makebox[2in]{\dotfill}\\
      \vspace{1cm}
 
      
     \flushleft
-    2. Head of the Department: Dr.Sachith Abeysundara\\
+    2. Head of the Department: name of the HOD\\ %add name of the head of the department
     \vspace{0.5cm}
     \noindent Date:
     \makebox[2in]{\dotfill}
     \flushright
-    \vspace{-0.75cm}
+    \vspace{-0.78cm}
     Signature:
     \makebox[2in]{\dotfill}\\
      \vspace{1cm}
@@ -150,9 +153,9 @@
 
 
 %\renewcommand{\contentsname}{ \centering TABLE OF CONTENTS}
-\renewcommand{\contentsname}{\hspace*{\fill}\bfseries\Large TABLE OF CONTENTS \hspace*{\fill}}   
-\renewcommand{\listtablename}{\hspace*{\fill}\bfseries\Large LIST OF TABLES \hspace*{\fill}}   
-\renewcommand{\listfigurename}{\hspace*{\fill}\bfseries\Large LIST OF FIGURES \hspace*{\fill}}   
+\renewcommand{\contentsname}{\hspace*{\fill}\bfseries\large TABLE OF CONTENTS \hspace*{\fill}}   
+\renewcommand{\listtablename}{\hspace*{\fill}\bfseries\large LIST OF TABLES \hspace*{\fill}}   
+\renewcommand{\listfigurename}{\hspace*{\fill}\bfseries\large LIST OF FIGURES \hspace*{\fill}}   
 %\renewcommand{\listabrname}{\hspace*{\fill}\bfseries\Large LIST OF ABREVIATIONS \hspace*{\fill}} 
 
 \renewcommand{\bibname}{REFERENCES}
@@ -160,18 +163,17 @@
 %%% --- Change chapter title ---
 
 \titleformat{\chapter}[display]
-{\Large \bfseries \centering}{CHAPTER\ \thechapter}{0pt}{\MakeUppercase}{\large}
+{\large \bfseries \centering}{CHAPTER\ \thechapter}{0pt}{\MakeUppercase}{\large}
 \titlespacing*{\chapter}{-10pt}{-20pt}{45pt}
 
 
 \setlength{\cftbeforechapskip}{15pt}
-%\renewcommand{\cftchapafterpnum}{\vspace{10pt}}
-% Change table of content
+
 
 \titlecontents{chapter}
-[-5pt]% <left>
-{\bfseries}% <above-code>
-{ \MakeUppercase{\chaptername}\ \thecontentslabel \ : \ \MakeUppercase }% <numbered-entry-format>
+[-5pt]
+{\bfseries}
+{ \MakeUppercase{\chaptername}\ \thecontentslabel \ : \ \MakeUppercase }
 {}% <numberless-entry-format>
 {\titlerule*[0.8pc]{.}\contentspage}
 
