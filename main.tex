@@ -6,7 +6,7 @@
 
 
 
-\title{Thesis title is}
+\title{Thesis title}
 
 %% The full name of the author
 \author{ Student Name }
@@ -22,10 +22,8 @@
 
 \begin{document}
 	
- \frontmatter
-
 \maketitle 
- 
+\frontmatter
  \include{abstract.tex}
  \addcontentsline{toc}{chapter}{ABSTRACT}
  
@@ -34,36 +32,24 @@
  
  \include{acknowledgements.tex}
  \addcontentsline{toc}{chapter}{ACKNOWLEDGEMENT} 
- 
- \addcontentsline{toc}{chapter}{TABLE OF CONTENTS} 
- 
- 
 
+\addcontentsline{toc}{chapter}{TABLE OF CONTENTS}
 
- 
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
+
 \tableofcontents
 
 \cleardoublepage
-
 \listoftables
-
 \cleardoublepage
-
- \listoffigures
- 
-
- 
-
+\listoffigures
 \mainmatter
-
-
-
 \doublespacing
 
 % add chapters here
 \include{chapters/Introduction.tex}
-
-
 \include{chapters/literature_review.tex}
 \input{chapters/methodology.tex}
 \include{chapters/results_and_discussion.tex}

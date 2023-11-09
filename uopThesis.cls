@@ -21,6 +21,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{mathptmx}
 \usepackage{graphicx}
+\titleformat*{\section}{\fontsize{14}{14}\selectfont}
+\titleformat*{\subsection}{\fontsize{12}{12}\selectfont}
+
  
 \geometry{
 	a4paper,
@@ -163,11 +166,11 @@
 %%% --- Change chapter title ---
 
 \titleformat{\chapter}[display]
-{\Large \bfseries \centering}{CHAPTER\ \thechapter}{14pt}{\MakeUppercase}{\Large}
+{\large \bfseries \centering}{CHAPTER\ \thechapter}{0pt}{\MakeUppercase}{\Large}
 \titlespacing*{\chapter}{-10pt}{-20pt}{45pt}
 
 
-\setlength{\cftbeforechapskip}{15pt}
+\setlength{\cftbeforechapskip}{12pt}
 
 
 \titlecontents{chapter}
